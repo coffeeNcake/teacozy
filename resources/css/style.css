@@ -1,0 +1,160 @@
+/*Page*/
+html,
+body,
+.page {
+  /*height=100%;*/
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.page-header {
+  /*flex: 0 0 auto;*/
+  position: fixed;
+  width: 1200px;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  display: inline-block;   /* why does this work but this line in the class def. doesn't?*/
+}
+
+a:link, a:visited, a:hover, a:active {
+  font-family: Helvetica;  /* why do i have to copy these from the page? */
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.mission,
+.teas,
+.locations {
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+/* Content */
+.page-content {
+  /*flex: 1 1 auto;*/
+  /*position: relative;  /* need this to position inner content */
+  /*overflow-y: auto;*/
+  text-align: center;
+  margin-top: 70px;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Mission Content */
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+}
+
+.mission-heading,
+.tea-heading,
+.contact-heading {
+  background-color: black;
+  width: 1200px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+h4 {
+  height: 20px;
+}
+
+.h4
+margin-top: 10px;
+
+/* Tea */
+
+.tea-content {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin-left: 100px;
+}
+
+.tea-square {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tea-img {
+  padding-right: 25px;
+}
+
+.tea-img h4 {
+  margin-top: 10px;
+}
+
+/* Locations */
+.location-content {
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.location-heading {
+  width: 1200px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.location-places {
+  display: flex;
+  justify-content: center;
+}
+
+.location-square {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+  margin-right: 40px;
+  opacity: 1;
+}
+
+/* Contact */
+.contact {
+  height: 200px;
+}
+
+/*Footer*/
+.page-footer {
+  margin-left: 20px;
+  text-align: left;
+}
